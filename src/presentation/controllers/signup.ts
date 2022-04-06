@@ -25,6 +25,9 @@ export class SignUpController implements Controller {
       return badRequest(new InvalidParamError('email'))
     }
 
-    throw new Error('Nao sei...')
+    return {
+      statusCode: 200,
+      body: {}
+    }
   }
 }
